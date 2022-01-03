@@ -20,7 +20,7 @@ More precise instructions can be found in the [installation section of the artic
 
 ## List of files in this repo:
 
-Repo Are Changed :( 
+Repository file are changed :( 
 
 ## License
 
