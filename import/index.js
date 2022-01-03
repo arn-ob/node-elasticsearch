@@ -2,11 +2,7 @@
   'use strict';
 
   const fs = require('fs');
-  const elasticsearch = require('elasticsearch');
-  const esClient = new elasticsearch.Client({
-    host: 'http://localhost:9200',
-    log: 'error'
-  });
+  const esClient = require('../engine')
 
   const bulkIndex = function bulkIndex(index, type, data) {
     let bulkBody = [];

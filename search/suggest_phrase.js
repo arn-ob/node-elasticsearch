@@ -1,11 +1,7 @@
 (function () {
   'use strict';
 
-  const elasticsearch = require('elasticsearch');
-  const esClient = new elasticsearch.Client({
-    host: '127.0.0.1:9200',
-    log: 'error'
-  });
+  const esClient = require('../engine')
 
   const suggest = function search(index, body) {
     return esClient.suggest({index: index, body: body});
